@@ -9,6 +9,10 @@ import (
     "github.com/gorilla/mux"
 )
 
+const (
+    environment = "ENVIRONMENT"
+)
+
 func main() {
     var router = mux.NewRouter()
     router.HandleFunc("/", index).Methods("GET")

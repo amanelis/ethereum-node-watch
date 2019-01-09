@@ -11,7 +11,12 @@ ENV PATH $GOPATH/bin:/usr/local/go/bin:$PATH
 
 WORKDIR /go/src/github.com/55foundry/gopi
 
-RUN go get && \
+RUN go get ./... && \
+	go get /go/src/github.com/55foundry/gopi && \
+	go get github.com/stretchr/testify/assert && \
+	go vet ./... && \
     go install github.com/55foundry/gopi
+
+RUN go test /go/src/github.com/55foundry/gopi
 
 ENTRYPOINT /go/bin/gopi
