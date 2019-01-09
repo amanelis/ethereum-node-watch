@@ -1,5 +1,5 @@
 library 'jenkins-pipeline'
 
 buildPlugin {
-  name = 'gopi''
+  name = 'gopi'
 }
