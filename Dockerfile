@@ -1,5 +1,7 @@
 FROM golang:1.11.2
 
+MAINTAINER 55Foundry, Inc.
+
 RUN mkdir -p $$GOPATH/bin && \
     curl https://glide.sh/get | sh && \
     go get github.com/pilu/fresh
