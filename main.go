@@ -63,8 +63,8 @@ func main() {
 
     l.SetOutput(os.Stdout)
 
-    fmt.Println("55Nodes server started at http://localhost:3000")
-    log.Fatal(http.ListenAndServe(":3000", router))
+    fmt.Println("55Nodes server started at http://localhost")
+    log.Fatal(http.ListenAndServe(":80", router))
 }
 
 func index(w http.ResponseWriter, r *http.Request) {
