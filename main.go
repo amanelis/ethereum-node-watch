@@ -177,6 +177,10 @@ func filters() []*ec2.Filter {
             Name:   aws.String("tag:NodeRanking"),
             Values: []*string{aws.String("leader")},
         },
+        {
+			Name:   aws.String("instance-state-name"),
+			Values: []*string{aws.String("running")},
+		},
 	}
 }
 
