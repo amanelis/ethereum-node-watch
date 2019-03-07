@@ -1,6 +1,6 @@
 # Ethereum Node Watcher
 
-[![CircleCI](https://circleci.com/gh/55foundry/ethereum-node-watch/tree/master.svg?style=svg)](https://circleci.com/gh/55foundry/ethereum-node-watch/tree/master)
+[![CircleCI](https://circleci.com/gh/55foundry/ethereum-node-watch.svg?style=svg&circle-token=826a338ded1d436c8eafd8255f3312058e74df27)](https://circleci.com/gh/55foundry/ethereum-node-watch)
 
 The purpose of this repository is to pull back valid stats about Ethereum Nodes with specific tags running in your AWS environment.
 
